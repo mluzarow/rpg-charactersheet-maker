@@ -1,0 +1,71 @@
+/* Navigation bar styling */
+#nb_frame {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1.8em;
+    background-color: black;
+    overflow: hidden;
+}
+
+#nb_frame #logo {
+    float: left;
+    text-decoration: none;
+    padding: 14px 16px;
+    color: grey;
+}
+
+#nb_frame #logo div {
+    background-color: red;
+    display: inline-block;
+    padding-bottom: 4px;
+    border-radius: 4px;
+}
+
+#nb_frame #logo span {
+    color: black;
+}
+
+#nb_frame ul {
+    font-family: "Arial";
+    margin: 0px;
+    margin-right: 10px;
+    padding: 0px;
+    float: right;
+    display: inline-block;
+    list-style-type: none;
+}
+
+#nb_frame ul li {
+    text-align: center;
+    padding: 14px 7px;
+    float: left;
+    color: grey;
+}
+
+#nb_frame ul li a {
+    text-decoration: none;
+    color: grey;
+}
+
+#nb_frame ul li a:hover {
+    border-top: solid red;
+    color: lightgrey;
+}
+
+/* Spacers */
+#db_spacer_1 {
+    height: 1px;
+    background-color: black;
+    border-bottom: solid red;
+}
+
+#db_spacer_2 {
+    height: 5px;
+    background-color: black;
+}
+
+#db_spacer_3 {
+    height: 15px;
+    background-color: black;
+    border-top: solid red;
+}

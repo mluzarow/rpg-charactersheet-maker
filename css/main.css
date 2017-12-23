@@ -1,0 +1,124 @@
+@import url("navbar_mobile.css") all and (max-width: 767px);
+@import url("navbar_z0.css") all and (min-width: 768px);
+
+/* Hide mobile stuff */
+#navbar_mobile_frame_top {
+    display: none;
+}
+#navbar_mobile_frame_side {
+    display: none;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+#sheet-container {
+	margin: 0 auto;
+	max-width: 1300px;
+	
+	border-left: 1px solid red;
+	border-right: 1px solid red;
+}
+
+.full-width-wrap {
+	margin: 5px 0;
+	width: 100%;
+	display: flex;
+}
+
+.full-width-wrap:first-child {
+	margin-top: 0;
+}
+
+.full-width-wrap:last-child {
+	margin-top: 0;
+}
+
+#logo-box {
+	height: 100px;
+	display: inline-block;
+	flex: 4;
+}
+
+#character-desc {
+	display: inline-block;
+	flex: 6;
+}
+
+select, input[type="text"] {
+	padding: 7px;
+	width: 100%;
+	max-height: 29px;
+	box-sizing: border-box;
+	border: none;
+	background-color: #fafafa;
+	font-family: "Arial";
+	font-size: 12px;
+	appearance: none;
+	-o-appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+}
+
+.input-wrap {
+	padding: 0 8px;
+}
+
+.input-wrap:first-child {
+	padding-left: 0;
+}
+
+.input-wrap:last-child {
+	padding-right: 0;
+}
+
+#character-name-wrap {
+	flex: 40;
+}
+#alignment-wrap {
+	flex: 20;
+}
+#player-name-wrap {
+	flex: 40;
+}
+
+#character-level-wrap {
+	flex: 50;
+}
+#deity-wrap {
+	flex: 25;
+}
+#homeland-wrap {
+	flex: 25;
+}
+
+#race-wrap {
+	flex: 200;
+}
+#size-wrap {
+	flex: 100;
+}
+#gender-wrap {
+	flex: 100;
+}
+#age-wrap {
+	flex: 100;
+}
+#height-wrap {
+	flex: 125
+}
+#weight-wrap {
+	flex: 125;
+}
+#hair-wrap {
+	flex: 125;
+}
+#eyes-wrap {
+	flex: 125;
+}
