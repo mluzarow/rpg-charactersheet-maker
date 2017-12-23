@@ -31,13 +31,23 @@ body {
 	width: 100%;
 	display: flex;
 }
-
 .full-width-wrap:first-child {
 	margin-top: 0;
 }
-
 .full-width-wrap:last-child {
+	margin-bottom: 0;
+}
+
+.half-width-wrap {
+	margin: 5px 0;
+	width: 50%;
+	float: left;
+}
+.half-width-wrap:first-child {
 	margin-top: 0;
+}
+.half-width-wrap:last-child {
+	margin-bottom: 0;
 }
 
 #logo-box {
@@ -51,7 +61,7 @@ body {
 	flex: 6;
 }
 
-select, input[type="text"] {
+select, input[type="text"], input[type='number'] {
 	padding: 7px;
 	width: 100%;
 	max-height: 29px;
@@ -64,6 +74,19 @@ select, input[type="text"] {
 	-o-appearance: none;
 	-moz-appearance: none;
 	-webkit-appearance: none;
+}
+
+label, span {
+	color: #fff;
+}
+
+.label-skill-wrap {
+	padding: 0 3px;
+	text-align: center;
+}
+.label-plus-skill-wrap {
+	padding: 0 3px;
+	text-align: center;
 }
 
 .input-wrap {
@@ -121,4 +144,26 @@ select, input[type="text"] {
 }
 #eyes-wrap {
 	flex: 125;
+}
+
+#name-skill-wrap {
+	flex: 360;
+}
+#total-skill-wrap {
+	flex: 120;
+}
+#ability-skill-wrap {
+	flex: 120;
+}
+#ranks-skill-wrap {
+	flex: 120;
+}
+#misc-skill-wrap {
+	flex: 120;
+}
+.label-skill-wrap {
+	flex: 60;
+}
+.label-plus-skill-wrap {
+	flex: 30
 }
