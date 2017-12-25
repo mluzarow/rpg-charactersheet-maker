@@ -88,6 +88,12 @@ select, input[type="text"], input[type='number'] {
 	-moz-appearance: none;
 	-webkit-appearance: none;
 }
+input[type='number'] {
+	appearance: textfield;
+	-o-appearance: textfield;
+	-moz-appearance: textfield;
+	-webkit-appearance: textfield;
+}
 
 label, span {
 	color: #fff;
@@ -202,5 +208,22 @@ label, span {
 	line-height: 0.95em;
 }
 .ability-stamp-wrap .ability-stamp .ability-name-long {
+	font-size: 0.5em;
+}
+
+.ability-header {
+	padding: 0 8px;
+	text-align: center;
+	overflow: hidden;
+}
+.ability-header:first-child {
+	padding-left: 0;
+}
+
+.ability-header:last-child {
+	padding-right: 0;
+}
+.ability-header span {
+	display: block;
 	font-size: 0.5em;
 }
