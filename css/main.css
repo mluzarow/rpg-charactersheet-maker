@@ -3,77 +3,29 @@
 
 /* Hide mobile stuff */
 #navbar_mobile_frame_top {
-    display: none;
+	display: none;
 }
 #navbar_mobile_frame_side {
-    display: none;
+	display: none;
 }
 
+/* ===== Resets ===== */
 html, body {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-    background-color: black;
+	background-color: #000;
 }
 
+/* ===== Main Container ===== */
 #sheet-container {
 	margin: 0 auto;
-	max-width: 1300px;
-	
-	border-left: 1px solid red;
-	border-right: 1px solid red;
+	max-width: 1350px;
 }
 
-.full-width-wrap {
-	margin: 5px 0;
-	width: 100%;
-	display: flex;
-}
-.full-width-wrap:first-child {
-	margin-top: 0;
-}
-.full-width-wrap:last-child {
-	margin-bottom: 0;
-}
-
-.half-width-wrap {
-	margin: 5px 0;
-	width: 50%;
-	float: left;
-}
-.half-width-wrap:first-child {
-	margin-top: 0;
-}
-.half-width-wrap:last-child {
-	margin-bottom: 0;
-}
-
-/* ===== Width splits ===== */
-._60-width-wrap {
-	flex: 60;
-	display: flex;
-}
-._50-width-wrap {
-	flex: 50;
-}
-._40-width-wrap {
-	flex: 40;
-	display: flex;
-}
-
-#logo-box {
-	height: 100px;
-	display: inline-block;
-	flex: 4;
-}
-
-#character-desc {
-	display: inline-block;
-	flex: 6;
-}
-
+/* ===== Generic Rules ===== */
 select, input[type="text"], input[type='number'] {
 	padding: 7px;
 	width: 100%;
@@ -88,6 +40,7 @@ select, input[type="text"], input[type='number'] {
 	-moz-appearance: none;
 	-webkit-appearance: none;
 }
+
 input[type='number'] {
 	appearance: textfield;
 	-o-appearance: textfield;
@@ -97,15 +50,6 @@ input[type='number'] {
 
 label, span {
 	color: #fff;
-}
-
-.label-skill-wrap {
-	padding: 0 3px;
-	text-align: center;
-}
-.label-plus-skill-wrap {
-	padding: 0 3px;
-	text-align: center;
 }
 
 .input-wrap {
@@ -120,12 +64,26 @@ label, span {
 	padding-right: 0;
 }
 
+/* ===== General Info Block ===== */
+#logo-box {
+	height: 100px;
+	display: inline-block;
+	flex: 4;
+}
+
+#character-desc {
+	display: inline-block;
+	flex: 6;
+}
+
 #character-name-wrap {
 	flex: 40;
 }
+
 #alignment-wrap {
 	flex: 20;
 }
+
 #player-name-wrap {
 	flex: 40;
 }
@@ -133,9 +91,11 @@ label, span {
 #character-level-wrap {
 	flex: 50;
 }
+
 #deity-wrap {
 	flex: 25;
 }
+
 #homeland-wrap {
 	flex: 25;
 }
@@ -143,79 +103,42 @@ label, span {
 #race-wrap {
 	flex: 200;
 }
+
 #size-wrap {
 	flex: 100;
 }
+
 #gender-wrap {
 	flex: 100;
 }
+
 #age-wrap {
 	flex: 100;
 }
+
 #height-wrap {
 	flex: 125
 }
+
 #weight-wrap {
 	flex: 125;
 }
+
 #hair-wrap {
 	flex: 125;
 }
+
 #eyes-wrap {
 	flex: 125;
 }
 
-#name-skill-wrap {
-	flex: 360;
-}
-#total-skill-wrap {
-	flex: 120;
-}
-#ability-skill-wrap {
-	flex: 120;
-}
-#ranks-skill-wrap {
-	flex: 120;
-}
-#misc-skill-wrap {
-	flex: 120;
-}
-.label-skill-wrap {
-	flex: 60;
-}
-.label-plus-skill-wrap {
-	flex: 30
-}
-
-.ability-stamp-wrap {
-	flex: 2500;
-}
-.ability-val-wrap {
-	flex: 1875
-}
-
-.ability-stamp-wrap .ability-stamp {
-	overflow: hidden;
-	text-align: center;
-	background-color: red;
-	height: 100%;
-}
-.ability-stamp-wrap .ability-stamp span {
-	color: #000;
-	display: block;
-}
-.ability-stamp-wrap .ability-stamp .ability-name-tag {
-	line-height: 0.95em;
-}
-.ability-stamp-wrap .ability-stamp .ability-name-long {
-	font-size: 0.5em;
-}
-
+/* ===== Ability Block ===== */
 .ability-header {
 	padding: 0 8px;
 	text-align: center;
 	overflow: hidden;
 }
+
 .ability-header:first-child {
 	padding-left: 0;
 }
@@ -223,7 +146,112 @@ label, span {
 .ability-header:last-child {
 	padding-right: 0;
 }
+
 .ability-header span {
 	display: block;
 	font-size: 0.5em;
+}
+
+.ability-stamp-wrap {
+	flex: 2500;
+}
+
+.ability-stamp-wrap .ability-stamp {
+	height: 100%;
+	background-color: red;
+	overflow: hidden;
+	text-align: center;
+}
+
+.ability-stamp-wrap .ability-stamp span {
+	display: block;
+	color: #000;
+}
+
+.ability-stamp-wrap .ability-stamp .ability-name-tag {
+	line-height: 0.95em;
+}
+
+.ability-stamp-wrap .ability-stamp .ability-name-long {
+	font-size: 0.5em;
+}
+
+.ability-val-wrap {
+	flex: 1875
+}
+
+/* ===== Skills Block ===== */
+.label-skill-wrap {
+	padding: 0 3px;
+	text-align: center;
+	flex: 60;
+}
+
+.label-plus-skill-wrap {
+	padding: 0 3px;
+	text-align: center;
+	flex: 30
+}
+
+.name-skill-wrap {
+	flex: 360;
+}
+
+.total-skill-wrap {
+	flex: 120;
+}
+
+.ability-skill-wrap {
+	flex: 120;
+}
+
+.ranks-skill-wrap {
+	flex: 120;
+}
+
+.misc-skill-wrap {
+	flex: 120;
+}
+
+/* ===== Width splits ===== */
+.full-width-wrap {
+	margin: 5px 0;
+	width: 100%;
+	display: flex;
+}
+
+.full-width-wrap:first-child {
+	margin-top: 0;
+}
+
+.full-width-wrap:last-child {
+	margin-bottom: 0;
+}
+
+.half-width-wrap {
+	margin: 5px 0;
+	width: 50%;
+	float: left;
+}
+
+.half-width-wrap:first-child {
+	margin-top: 0;
+}
+
+.half-width-wrap:last-child {
+	margin-bottom: 0;
+}
+
+._60-width-wrap {
+	flex: 60;
+	display: flex;
+}
+
+._50-width-wrap {
+	flex: 50;
+}
+
+._40-width-wrap {
+	flex: 40;
+	display: flex;
 }
