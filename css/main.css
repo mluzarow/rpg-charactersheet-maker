@@ -64,13 +64,26 @@ label, span {
 	padding-right: 0;
 }
 
-/* ===== General Info Block ===== */
+/* 
++==============================================================================+
+|                                                                              |
+|                       Row #1 - Logo + Character Summary                      |
+|                                                                              |
++==============================================================================+
+*/
+#row-general-info {
+	margin-bottom: 5px;
+	display: flex;
+}
+
+/* ===== Logo ===== */
 #logo-box {
 	height: 100px;
 	display: inline-block;
 	flex: 4;
 }
 
+/* ===== General Info Block ===== */
 #character-desc {
 	display: inline-block;
 	flex: 6;
@@ -130,6 +143,18 @@ label, span {
 
 #eyes-wrap {
 	flex: 125;
+}
+
+/* 
++==============================================================================+
+|                                                                              |
+|                          Row #2 - Numbers + Skills                           |
+|                                                                              |
++==============================================================================+
+*/
+#row-numeric-info {
+	margin-bottom: 5px;
+	display: flex;
 }
 
 /* ===== Ability Block ===== */
