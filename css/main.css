@@ -50,6 +50,15 @@ body {
 	margin-bottom: 0;
 }
 
+._60-width-wrap {
+	flex: 60;
+	display: flex;
+}
+._40-width-wrap {
+	flex: 40;
+	display: flex;
+}
+
 #logo-box {
 	height: 100px;
 	display: inline-block;
