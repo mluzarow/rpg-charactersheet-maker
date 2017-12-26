@@ -64,194 +64,224 @@ label, span {
 	padding-right: 0;
 }
 
-/* ===== General Info Block ===== */
-#logo-box {
+.row-full-width {
+	margin: 5px 0;
+	width: 100%;
+	display: flex;
+}
+
+.row-full-width:first-child {
+	margin-top: 0;
+}
+
+.row-full-width:last-child {
+	margin-bottom: 0;
+}
+
+/* 
++==============================================================================+
+|                                                                              |
+|                       Row #1 - Logo + Character Summary                      |
+|                                                                              |
++==============================================================================+
+*/
+#row-general-info {
+	margin-bottom: 5px;
+	display: flex;
+}
+
+/* ===== Logo ===== */
+#col-logo-box {
 	height: 100px;
-	display: inline-block;
+	display: flex;
 	flex: 4;
 }
 
-#character-desc {
-	display: inline-block;
+/* ===== General Info Block ===== */
+#col-character-summary {
+	display: flex;
 	flex: 6;
 }
 
-#character-name-wrap {
-	flex: 40;
+#col-character-summary #col-cs-left {
+	padding-right: 16px;
+	flex: 6;
 }
 
-#alignment-wrap {
-	flex: 20;
+#col-character-summary #col-cs-right {
+	flex: 4;
 }
 
-#player-name-wrap {
-	flex: 40;
+/* Left Row #1 */
+#col-cs-left #character-name-wrap {
+	flex: 7;
 }
 
-#character-level-wrap {
-	flex: 50;
+#col-cs-left #alignment-wrap {
+	flex: 3;
 }
 
-#deity-wrap {
-	flex: 25;
+/* Left Row #2 */
+#col-cs-left #character-level-wrap {
+	flex: 1;
 }
 
-#homeland-wrap {
-	flex: 25;
+/* Left Row #3 */
+#col-cs-left #race-wrap {
+	flex: 4;
 }
 
-#race-wrap {
-	flex: 200;
+#col-cs-left #size-wrap {
+	flex: 2;
 }
 
-#size-wrap {
-	flex: 100;
+#col-cs-left #gender-wrap {
+	flex: 2;
 }
 
-#gender-wrap {
-	flex: 100;
+#col-cs-left #age-wrap {
+	flex: 2;
 }
 
-#age-wrap {
-	flex: 100;
+/* Right Row #1 */
+#col-cs-right #player-name-wrap {
+	flex: 1;
 }
 
-#height-wrap {
-	flex: 125
+/* Right Row #2 */
+#col-cs-right #deity-wrap {
+	flex: 1;
 }
 
-#weight-wrap {
-	flex: 125;
+#col-cs-right #homeland-wrap {
+	flex: 1;
 }
 
-#hair-wrap {
-	flex: 125;
+/* Right Row #3 */
+#col-cs-right #height-wrap {
+	flex: 1
 }
 
-#eyes-wrap {
-	flex: 125;
+#col-cs-right #weight-wrap {
+	flex: 1;
+}
+
+#col-cs-right #hair-wrap {
+	flex: 1;
+}
+
+#col-cs-right #eyes-wrap {
+	flex: 1;
+}
+
+/* 
++==============================================================================+
+|                                                                              |
+|                          Row #2 - Numbers + Skills                           |
+|                                                                              |
++==============================================================================+
+*/
+#row-numeric-info {
+	margin-bottom: 5px;
+	display: flex;
+}
+
+#row-numeric-info #col-ni-left {
+	padding-right: 8px;
+	display: flex;
+	flex: 1;
+}
+
+#row-numeric-info #col-ni-right {
+	padding-left: 8px;
+	flex: 1;
+}
+
+#col-other-thing {
+	flex: 1;
 }
 
 /* ===== Ability Block ===== */
-.ability-header {
+#col-ability-num {
+	flex: 1;
+}
+
+#col-ability-num .ability-header {
 	padding: 0 8px;
 	text-align: center;
 	overflow: hidden;
 }
 
-.ability-header:first-child {
+#col-ability-num .ability-header:first-child {
 	padding-left: 0;
 }
 
-.ability-header:last-child {
+#col-ability-num .ability-header:last-child {
 	padding-right: 0;
 }
 
-.ability-header span {
+#col-ability-num .ability-header span {
 	display: block;
 	font-size: 0.5em;
 }
 
-.ability-stamp-wrap {
+#col-ability-num .ability-stamp-wrap {
 	flex: 2500;
 }
 
-.ability-stamp-wrap .ability-stamp {
+#col-ability-num .ability-stamp-wrap .ability-stamp {
 	height: 100%;
 	background-color: red;
 	overflow: hidden;
 	text-align: center;
 }
 
-.ability-stamp-wrap .ability-stamp span {
+#col-ability-num .ability-stamp-wrap .ability-stamp span {
 	display: block;
 	color: #000;
 }
 
-.ability-stamp-wrap .ability-stamp .ability-name-tag {
+#col-ability-num .ability-stamp-wrap .ability-stamp .ability-name-tag {
 	line-height: 0.95em;
 }
 
-.ability-stamp-wrap .ability-stamp .ability-name-long {
+#col-ability-num .ability-stamp-wrap .ability-stamp .ability-name-long {
 	font-size: 0.5em;
 }
 
-.ability-val-wrap {
+#col-ability-num .ability-val-wrap {
 	flex: 1875
 }
 
 /* ===== Skills Block ===== */
-.label-skill-wrap {
+#col-ni-right .label-skill-wrap {
 	padding: 0 3px;
 	text-align: center;
 	flex: 60;
 }
 
-.label-plus-skill-wrap {
+#col-ni-right .label-plus-skill-wrap {
 	padding: 0 3px;
 	text-align: center;
 	flex: 30
 }
 
-.name-skill-wrap {
+#col-ni-right .name-skill-wrap {
 	flex: 360;
 }
 
-.total-skill-wrap {
+#col-ni-right .total-skill-wrap {
 	flex: 120;
 }
 
-.ability-skill-wrap {
+#col-ni-right .ability-skill-wrap {
 	flex: 120;
 }
 
-.ranks-skill-wrap {
+#col-ni-right .ranks-skill-wrap {
 	flex: 120;
 }
 
-.misc-skill-wrap {
+#col-ni-right .misc-skill-wrap {
 	flex: 120;
-}
-
-/* ===== Width splits ===== */
-.full-width-wrap {
-	margin: 5px 0;
-	width: 100%;
-	display: flex;
-}
-
-.full-width-wrap:first-child {
-	margin-top: 0;
-}
-
-.full-width-wrap:last-child {
-	margin-bottom: 0;
-}
-
-.half-width-wrap {
-	margin: 5px 0;
-	width: 50%;
-	float: left;
-}
-
-.half-width-wrap:first-child {
-	margin-top: 0;
-}
-
-.half-width-wrap:last-child {
-	margin-bottom: 0;
-}
-
-._60-width-wrap {
-	flex: 60;
-	display: flex;
-}
-
-._50-width-wrap {
-	flex: 50;
-}
-
-._40-width-wrap {
-	flex: 40;
-	display: flex;
 }
