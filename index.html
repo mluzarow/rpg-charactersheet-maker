@@ -25,17 +25,12 @@
 	<!-- Page Content -->
 	<div id = "sheet-container">
 		<div id = "row-general-info">
-			<div id = "logo-box"></div>
-			<div id = "character-desc">
-				<div class = "full-width-wrap">
-					<div class = "_60-width-wrap" style = "padding-right: 16px;">
+			<div id = "col-logo-box"></div>
+			<div id = "col-character-summary">
+				<div id = "col-cs-left">
+					<div class = "row-full-width">
 						<div id = "character-name-wrap" class = "input-wrap">
-							<input
-								id = "character-name"
-								class = "text-input"
-								type = "text"
-								placeholder = "Character Name"
-							/>
+							<input id = "character-name" class = "text-input" type = "text" placeholder = "Character Name"/>
 						</div>
 						<div id = "alignment-wrap" class = "input-wrap">
 							<select id = "alignment" class = "select-tips">
@@ -52,29 +47,50 @@
 							</select>
 						</div>
 					</div>
-					<div class = "_40-width-wrap">
-						<div id = "player-name-wrap" class = "input-wrap">
-							<input
-								id = "player-name"
-								class = "text-input"
-								type = "text"
-								placeholder = "Player Name"
-							/>
+					<div class = "row-full-width">
+						<div id = "character-level-wrap" class = "input-wrap">
+							<input id = "character-level" class = "text-input" type = "text" placeholder = "Character Level"/>
+						</div>
+					</div>
+					<div class = "row-full-width">
+						<div id = "race-wrap" class = "input-wrap">
+							<select id = "race" class = "select-tips">
+								<option selected>Race</option>
+								<option value = "0">Dwarf</option>
+								<option value = "1">Elf</option>
+								<option value = "2">Gnome</option>
+								<option value = "3">Half-elf</option>
+								<option value = "4">Halfling</option>
+								<option value = "5">Half-orc</option>
+								<option value = "6">Human</option>
+								<option value = "7">Aasimie</option>
+								<option value = "8">Tiefling</option>
+								<option value = "9">Dhampir</option>
+							</select>
+						</div>
+						<div id = "size-wrap" class = "input-wrap">
+							<input id = "size" class = "text-input" type = "text" placeholder = "Size"/>
+						</div>
+						<div id = "gender-wrap" class = "input-wrap">
+							<select id = "gender" class = "select-tips">
+								<option selected>Gender</option>
+								<option value = "0">Female</option>
+								<option value = "1">Male</option>
+								<option value = "2">Other</option>
+							</select>
+						</div>
+						<div id = "age-wrap" class = "input-wrap">
+							<input id = "age" class = "text-input" type = "text" placeholder = "Age"/>
 						</div>
 					</div>
 				</div>
-				<div class = "full-width-wrap">
-					<div class = "_60-width-wrap" style = "padding-right: 16px;">
-						<div id = "character-level-wrap" class = "input-wrap">
-							<input
-								id = "character-level"
-								class = "text-input"
-								type = "text"
-								placeholder = "Character Level"
-							/>
+				<div id = "col-cs-right">
+					<div class = "row-full-width">
+						<div id = "player-name-wrap" class = "input-wrap">
+							<input id = "player-name" class = "text-input" type = "text" placeholder = "Player Name"/>
 						</div>
 					</div>
-					<div class = "_40-width-wrap">
+					<div class = "row-full-width">
 						<div id = "deity-wrap" class = "input-wrap">
 							<select id = "deity" class = "select-tips">
 								<option selected>Deity</option>
@@ -101,73 +117,15 @@
 							</select>
 						</div>
 						<div id = "homeland-wrap" class = "input-wrap">
-							<input
-								id = "Location"
-								class = "text-input"
-								type = "text"
-								placeholder = "Location"
-							/>
+							<input id = "Location" class = "text-input" type = "text" placeholder = "Location"/>
 						</div>
 					</div>
-				</div>
-				<div class = "full-width-wrap">
-					<div class = "_60-width-wrap" style = "padding-right: 16px;">
-						<div id = "race-wrap" class = "input-wrap">
-							<select id = "race" class = "select-tips">
-								<option selected>Race</option>
-								<option value = "0">Dwarf</option>
-								<option value = "1">Elf</option>
-								<option value = "2">Gnome</option>
-								<option value = "3">Half-elf</option>
-								<option value = "4">Halfling</option>
-								<option value = "5">Half-orc</option>
-								<option value = "6">Human</option>
-								<option value = "7">Aasimie</option>
-								<option value = "8">Tiefling</option>
-								<option value = "9">Dhampir</option>
-							</select>
-						</div>
-						<div id = "size-wrap" class = "input-wrap">
-							<input
-								id = "size"
-								class = "text-input"
-								type = "text"
-								placeholder = "Size"
-							/>
-						</div>
-						<div id = "gender-wrap" class = "input-wrap">
-							<select id = "gender" class = "select-tips">
-								<option selected>Gender</option>
-								<option value = "0">Female</option>
-								<option value = "1">Male</option>
-								<option value = "2">Other</option>
-							</select>
-						</div>
-						<div id = "age-wrap" class = "input-wrap">
-							<input
-								id = "age"
-								class = "text-input"
-								type = "text"
-								placeholder = "Age"
-							/>
-						</div>
-					</div>
-					<div class = "_40-width-wrap">
+					<div class = "row-full-width">
 						<div id = "height-wrap" class = "input-wrap">
-							<input
-								id = "height"
-								class = "text-input"
-								type = "text"
-								placeholder = "Height"
-							/>
+							<input id = "height" class = "text-input" type = "text" placeholder = "Height"/>
 						</div>
 						<div id = "weight-wrap" class = "input-wrap">
-							<input
-								id = "weight"
-								class = "text-input"
-								type = "text"
-								placeholder = "Weight"
-							/>
+							<input id = "weight" class = "text-input" type = "text" placeholder = "Weight"/>
 						</div>
 						<div id = "hair-wrap" class = "input-wrap">
 							<select id = "hair" class = "select-tips">

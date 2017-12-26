@@ -64,6 +64,20 @@ label, span {
 	padding-right: 0;
 }
 
+.row-full-width {
+	margin: 5px 0;
+	width: 100%;
+	display: flex;
+}
+
+.row-full-width:first-child {
+	margin-top: 0;
+}
+
+.row-full-width:last-child {
+	margin-bottom: 0;
+}
+
 /* 
 +==============================================================================+
 |                                                                              |
@@ -77,72 +91,87 @@ label, span {
 }
 
 /* ===== Logo ===== */
-#logo-box {
+#col-logo-box {
 	height: 100px;
-	display: inline-block;
+	display: flex;
 	flex: 4;
 }
 
 /* ===== General Info Block ===== */
-#character-desc {
-	display: inline-block;
+#col-character-summary {
+	display: flex;
 	flex: 6;
 }
 
-#character-name-wrap {
-	flex: 40;
+#col-character-summary #col-cs-left {
+	padding-right: 16px;
+	flex: 6;
 }
 
-#alignment-wrap {
-	flex: 20;
+#col-character-summary #col-cs-right {
+	flex: 4;
 }
 
-#player-name-wrap {
-	flex: 40;
+/* Left Row #1 */
+#col-cs-left #character-name-wrap {
+	flex: 7;
 }
 
-#character-level-wrap {
-	flex: 50;
+#col-cs-left #alignment-wrap {
+	flex: 3;
 }
 
-#deity-wrap {
-	flex: 25;
+/* Left Row #2 */
+#col-cs-left #character-level-wrap {
+	flex: 1;
 }
 
-#homeland-wrap {
-	flex: 25;
+/* Left Row #3 */
+#col-cs-left #race-wrap {
+	flex: 4;
 }
 
-#race-wrap {
-	flex: 200;
+#col-cs-left #size-wrap {
+	flex: 2;
 }
 
-#size-wrap {
-	flex: 100;
+#col-cs-left #gender-wrap {
+	flex: 2;
 }
 
-#gender-wrap {
-	flex: 100;
+#col-cs-left #age-wrap {
+	flex: 2;
 }
 
-#age-wrap {
-	flex: 100;
+/* Right Row #1 */
+#col-cs-right #player-name-wrap {
+	flex: 1;
 }
 
-#height-wrap {
-	flex: 125
+/* Right Row #2 */
+#col-cs-right #deity-wrap {
+	flex: 1;
 }
 
-#weight-wrap {
-	flex: 125;
+#col-cs-right #homeland-wrap {
+	flex: 1;
 }
 
-#hair-wrap {
-	flex: 125;
+/* Right Row #3 */
+#col-cs-right #height-wrap {
+	flex: 1
 }
 
-#eyes-wrap {
-	flex: 125;
+#col-cs-right #weight-wrap {
+	flex: 1;
+}
+
+#col-cs-right #hair-wrap {
+	flex: 1;
+}
+
+#col-cs-right #eyes-wrap {
+	flex: 1;
 }
 
 /* 
